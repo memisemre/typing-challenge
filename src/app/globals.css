@@ -10,3 +10,8 @@ body{
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
+button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
