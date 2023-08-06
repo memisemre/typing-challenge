@@ -91,6 +91,7 @@ const Home = () => {
   };
   return (
     <main className={CSS.main}>
+      <h1>Typing Challenge</h1>
       {!isPlaying && <button onClick={startGame}>Start Game</button>}
 
       {currentWord && (
@@ -99,12 +100,11 @@ const Home = () => {
         </div>
       )}
       <div>
-        <div>
-          <p>Time {timerValue}</p>
-        </div>
+        <p>Time {timerValue}</p>
         <p>True : {trueWordsPice}</p>
         <p>False : {falseWordsPice}</p>
         <p>Empty : {emptyAns}</p>
+        <p>Total Game : {totalAnswers}</p>
       </div>
       <input
         type="text"
